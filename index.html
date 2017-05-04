@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wheel of Fortune</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+		<label>Select difficulty list</label>
+             <select id = "myList">
+               <option id="four" value = "4">four</option>
+               <option id="five" value = "5">five</option>
+               <option id="six" value = "6">six</option>
+               <option id="seven" value = "7">seven</option>
+               <option id="eight" value = "8">eight</option>
+               <option id="nine" value = "9">nine</option>
+               <option id="ten" value = "10">ten</option>
+             </select>
+
+        <div class="word-container">
+        	<div id="back-ground">
+        		<div id="wordFill">
+        			
+        		</div>
+        	</div>
+        </div>
+
+        <div class="guess-container">
+        	<div class="guess-text">Guess</div>
+        	<div id="guessByLetter">
+        		Letter (100 points)
+        			<input type="letter" id="letterInput"> 
+        	</div>
+        	<div id="guessByWord">
+        		Word (200 points)
+        			<input type="letter" id="wordInput"> 
+        	</div>
+        </div>
+
+        <div class="points-container">
+        	<div class="points-text"></div>
+        	<div class="points-background">
+        		<div class="points">
+        			<div id="oneHundred"></div>
+        			<div id="twoHundred"></div>
+        			<div id="threeHundred"></div>
+        			<div id="fourHundred"></div>
+        			<div id="fiveHundred"></div>
+        		</div>
+        	</div>
+        </div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
