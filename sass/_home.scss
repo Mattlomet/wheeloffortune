@@ -25,7 +25,8 @@
 .button{
 	height: 40px;
 	width: 80px;
-	background-color: grey;
+	background-color: lightgrey;
+	border: 2px solid grey;
 	color: black;
 	font-family:'Dosis', sans-serif;
 	display: inline;
@@ -34,7 +35,7 @@
 	transition: 1s all;
 
 	&:hover{
-		background-color: white;
+		background-color: grey;
 	}
 }
 
@@ -45,7 +46,101 @@
 		min-height: 25%;
 		height: 250px;
 		margin: 25px;
-		background-color: white;
+		background-color: lightgrey;
+		#wordFill{
+
+			.letter0{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter1{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+
+			}
+			.letter2{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter3{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter4{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter5{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter6{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter7{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter8{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+			.letter9{
+				font-size: 50px;
+    			display: inline-flex;
+    			margin: 25px;
+    			justify-content: space-around;
+    			margin-top: 90px;
+    			font-family: 'Dosis', sans-serif;
+    			display: none;
+			}
+		}
 	}
 }
 
@@ -72,6 +167,7 @@
 				background-color: lightgrey; 
 				width: 150px;
 				border-radius: 50%;
+				border: 2px solid black;
 			}
 	}
 
