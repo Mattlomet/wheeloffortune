@@ -23,4 +23,49 @@ body {
     .top-bar .guess-container #guessByWord {
       display: inline; }
 
+.button {
+  height: 40px;
+  width: 80px;
+  background-color: grey;
+  color: black;
+  font-family: 'Dosis', sans-serif;
+  display: inline;
+  font-size: 32px;
+  padding: 2px;
+  transition: 1s all; }
+  .button:hover {
+    background-color: white; }
+
+.word-container {
+  min-height: 25%;
+  height: 350px; }
+  .word-container #back-ground {
+    min-height: 25%;
+    height: 250px;
+    margin: 25px;
+    background-color: white; }
+
+.points-container {
+  min-height: 25%;
+  height: 350px; }
+  .points-container .points-text {
+    font-size: 32px;
+    font-family: 'Dosis', sans-serif;
+    color: lightgrey; }
+  .points-container .points-background {
+    min-height: 25%;
+    height: 250px;
+    margin: 25px;
+    background-color: grey; }
+    .points-container .points-background .size-of-point-divs {
+      display: inline-flex;
+      justify-content: space-around;
+      min-height: 20%;
+      height: 200px;
+      padding: 10px;
+      margin: 10px;
+      background-color: lightgrey;
+      width: 150px;
+      border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */

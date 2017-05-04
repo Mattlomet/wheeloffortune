@@ -19,17 +19,19 @@
                		<option id="nine" value = "9">nine</option>
                		<option id="ten" value = "10">ten</option>
              	</select>
-
+            <div class="button" id="numberButton">sumbit</div>
         </div>
         <div class="guess-container">
         	<div class="guess-text">Guess</div>
         	<div id="guessByLetter">
-        		Letter (100 points)
-        			<input type="letter" id="letterInput"> 
+        		Letter (1 lifepoint)
+        			<input type="letter" id="letterInput">
+        			<div class="button" id="letterButton">sumbit</div> 
         	</div>
         	<div id="guessByWord">
-        		Word (200 points)
+        		Word (2 lifepoints)
         			<input type="letter" id="wordInput"> 
+        			<div class="button" id="wordButton">sumbit</div>
         	</div>
         </div>
 
@@ -43,15 +45,13 @@
         </div>
 
         <div class="points-container">
-        	<div class="points-text"></div>
+        	<div class="points-text">Life-Points:</div>
         	<div class="points-background">
-        		<div class="points">
-        			<div id="oneHundred"></div>
-        			<div id="twoHundred"></div>
-        			<div id="threeHundred"></div>
-        			<div id="fourHundred"></div>
-        			<div id="fiveHundred"></div>
-        		</div>
+        			<div id="oneHundred" class="size-of-point-divs"></div>
+        			<div id="twoHundred" class="size-of-point-divs"></div>
+        			<div id="threeHundred" class="size-of-point-divs"></div>
+        			<div id="fourHundred" class="size-of-point-divs"></div>
+        			<div id="fiveHundred" class="size-of-point-divs"></div>
         	</div>
         </div>
 <script type="text/javascript" src="script.js"></script>

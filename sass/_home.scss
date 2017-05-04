@@ -20,3 +20,64 @@
 
 
 }
+
+
+.button{
+	height: 40px;
+	width: 80px;
+	background-color: grey;
+	color: black;
+	font-family:'Dosis', sans-serif;
+	display: inline;
+	font-size: 32px;
+	padding: 2px;
+	transition: 1s all;
+
+	&:hover{
+		background-color: white;
+	}
+}
+
+.word-container{
+	min-height: 25%;
+	height: 350px;
+	#back-ground{
+		min-height: 25%;
+		height: 250px;
+		margin: 25px;
+		background-color: white;
+	}
+}
+
+.points-container{
+	min-height: 25%;
+	height: 350px;
+	.points-text{
+		font-size: 32px;
+		font-family: 'Dosis', sans-serif; 
+		color: lightgrey;
+	}
+	.points-background{
+		min-height: 25%;
+		height: 250px;
+		margin: 25px;
+		background-color: grey;
+		.size-of-point-divs{
+				display: inline-flex;
+				justify-content: space-around;
+				min-height: 20%;
+				height: 200px; 
+				padding: 10px;
+				margin: 10px;
+				background-color: lightgrey; 
+				width: 150px;
+				border-radius: 50%;
+			}
+	}
+
+
+}
+
+
+
+
