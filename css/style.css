@@ -4,6 +4,23 @@ body {
   background: -webkit-linear-gradient(to right, #414345, #232526);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #414345, #232526);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  margin: 0 auto; }
+
+.top-bar {
+  background-color: #fff;
+  font-family: 'Dosis', sans-serif;
+  font-size: 40px; }
+  .top-bar .difficulty-selection {
+    padding: 20px;
+    border-bottom: 2px solid lightgrey; }
+  .top-bar .guess-container {
+    padding: 20px;
+    border-bottom: 2px solid grey; }
+    .top-bar .guess-container #guessByLetter {
+      display: inline; }
+    .top-bar .guess-container #guessByWord {
+      display: inline; }
 
 /*# sourceMappingURL=style.css.map */

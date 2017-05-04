@@ -2,29 +2,25 @@
 <html>
 <head>
 	<title>Wheel of Fortune</title>
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
-		<label>Select difficulty list</label>
-             <select id = "myList">
-               <option id="four" value = "4">four</option>
-               <option id="five" value = "5">five</option>
-               <option id="six" value = "6">six</option>
-               <option id="seven" value = "7">seven</option>
-               <option id="eight" value = "8">eight</option>
-               <option id="nine" value = "9">nine</option>
-               <option id="ten" value = "10">ten</option>
-             </select>
+	<div class="top-bar">
+		<div class="difficulty-selection">
+			<label id="label" class="label">Select difficulty list</label>
+            	<select id = "myList">
+               		<option id="four" value = "4">four</option>
+               		<option id="five" value = "5">five</option>
+               		<option id="six" value = "6">six</option>
+               		<option id="seven" value = "7">seven</option>
+               		<option id="eight" value = "8">eight</option>
+               		<option id="nine" value = "9">nine</option>
+               		<option id="ten" value = "10">ten</option>
+             	</select>
 
-        <div class="word-container">
-        	<div id="back-ground">
-        		<div id="wordFill">
-        			
-        		</div>
-        	</div>
         </div>
-
         <div class="guess-container">
         	<div class="guess-text">Guess</div>
         	<div id="guessByLetter">
@@ -34,6 +30,15 @@
         	<div id="guessByWord">
         		Word (200 points)
         			<input type="letter" id="wordInput"> 
+        	</div>
+        </div>
+
+    </div>    
+          <div class="word-container">
+        	<div id="back-ground">
+        		<div id="wordFill">
+        			
+        		</div>
         	</div>
         </div>
 
