@@ -7,6 +7,17 @@
 	.difficulty-selection{
 		padding:20px;
 		border-bottom: 2px solid $text-color;
+		#hint{
+			display: inline-flex;
+			#hintKey{
+				padding-left: 10px;
+				opacity: 0;
+				transition: all 1s;
+				&:hover{
+					opacity: 1;
+				}
+			}
+		}
 
 	}
 	.guess-container{
@@ -194,7 +205,3 @@
 
 
 }
-
-
-
-

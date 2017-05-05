@@ -36,6 +36,14 @@ body {
   .top-bar .difficulty-selection {
     padding: 20px;
     border-bottom: 2px solid #C0B283; }
+    .top-bar .difficulty-selection #hint {
+      display: inline-flex; }
+      .top-bar .difficulty-selection #hint #hintKey {
+        padding-left: 10px;
+        opacity: 0;
+        transition: all 1s; }
+        .top-bar .difficulty-selection #hint #hintKey:hover {
+          opacity: 1; }
   .top-bar .guess-container {
     padding: 20px;
     border-bottom: 10px double #C0B283; }

@@ -12,6 +12,7 @@ var wordArray = [];
 var splitWordArray;
 
 var wordFill = document.getElementById('wordFill')
+var hintKey = document.getElementById('hintKey');
 
 var selection = document.getElementById('myList');
 var letterInput = document.getElementById('letterInput');
@@ -45,12 +46,20 @@ function difficultSelect (){
 		var splitWord = fourLetterWord.split("");
 		splitWordArray=splitWord;
 
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}		
+
 	}if (selection.value==="5"){
 
 		wordArray.push(fiveLetterWord);
 		
 		var splitWord = fiveLetterWord.split("");
 		splitWordArray=splitWord;
+
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}
 
 	}if (selection.value==="6"){
 
@@ -59,12 +68,20 @@ function difficultSelect (){
 		var splitWord = sixLetterWord.split("");
 		splitWordArray=splitWord;
 
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}
+
 	}if (selection.value==="7"){
 
 		wordArray.push(sevenLetterWord);
 		
 		var splitWord = sevenLetterWord.split("");
 		splitWordArray=splitWord;
+
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}
 
 	}if (selection.value==="8"){
 
@@ -73,6 +90,10 @@ function difficultSelect (){
 		var splitWord = eightLetterWord.split("");
 		splitWordArray=splitWord;
 
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}
+
 	}if (selection.value==="9"){
 
 		wordArray.push(nineLetterWord);
@@ -80,12 +101,20 @@ function difficultSelect (){
 		var splitWord = nineLetterWord.split("");
 		splitWordArray=splitWord;
 
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}
+
 	}if (selection.value==="10"){
 
 		wordArray.push(tenLetterWord);
 		
 		var splitWord = tenLetterWord.split("");
 		splitWordArray=splitWord;
+
+		for (var i = 0; i < 1; i++) {
+					hintKey.innerHTML+=splitWordArray[i]
+				}
 
 	}
 	for (var i = 0; i < splitWordArray.length; i++) {
