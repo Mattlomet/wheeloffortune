@@ -149,5 +149,7 @@ body {
       width: 150px;
       border-radius: 50%;
       border: 2px solid black; }
+      .points-container .points-background .size-of-point-divs:hover {
+        background-color: salmon; }
 
 /*# sourceMappingURL=style.css.map */
