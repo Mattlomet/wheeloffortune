@@ -1,23 +1,44 @@
 body {
-  background: #232526;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #414345, #232526);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #414345, #232526);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(89deg, #ffffff, #dcd0c0, #e4cbaa);
+  background-size: 600% 600%;
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
   text-align: center;
   margin: 0 auto; }
 
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 .top-bar {
-  background-color: #fff;
+  background-color: #FDF3E7;
   font-family: 'Dosis', sans-serif;
-  font-size: 40px; }
+  font-size: 40px;
+  color: #373737; }
   .top-bar .difficulty-selection {
     padding: 20px;
-    border-bottom: 2px solid lightgrey; }
+    border-bottom: 2px solid #C0B283; }
   .top-bar .guess-container {
     padding: 20px;
-    border-bottom: 2px solid grey; }
+    border-bottom: 10px double #C0B283; }
     .top-bar .guess-container #guessByLetter {
       display: inline; }
     .top-bar .guess-container #guessByWord {
@@ -26,8 +47,8 @@ body {
 .button {
   height: 40px;
   width: 80px;
-  background-color: lightgrey;
-  border: 2px solid grey;
+  background-color: #C0B283;
+  border: 2px solid #373737;
   color: black;
   font-family: 'Dosis', sans-serif;
   display: inline;
@@ -35,7 +56,7 @@ body {
   padding: 2px;
   transition: 1s all; }
   .button:hover {
-    background-color: grey; }
+    background-color: #373737; }
 
 .word-container {
   min-height: 25%;
@@ -44,8 +65,11 @@ body {
     min-height: 25%;
     height: 250px;
     margin: 25px;
-    background-color: lightgrey; }
+    background-color: lightgrey;
+    -webkit-border-radius: 1px 100px 1px 100px;
+    border-radius: 1px 100px 1px 100px; }
     .word-container #back-ground #wordFill .letter0 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -54,6 +78,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter1 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -62,6 +87,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter2 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -70,6 +96,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter3 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -78,6 +105,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter4 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -86,6 +114,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter5 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -94,6 +123,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter6 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -102,6 +132,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter7 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -110,6 +141,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter8 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -118,6 +150,7 @@ body {
       font-family: 'Dosis', sans-serif;
       display: none; }
     .word-container #back-ground #wordFill .letter9 {
+      color: #C0B283;
       font-size: 50px;
       display: inline-flex;
       margin: 25px;
@@ -132,12 +165,14 @@ body {
   .points-container .points-text {
     font-size: 32px;
     font-family: 'Dosis', sans-serif;
-    color: lightgrey; }
+    color: #373737; }
   .points-container .points-background {
     min-height: 25%;
     height: 250px;
     margin: 25px;
-    background-color: grey; }
+    background-color: lightgrey;
+    -webkit-border-radius: 100px 1px 100px 1px;
+    border-radius: 100px 1px 100px 1px; }
     .points-container .points-background .size-of-point-divs {
       display: inline-flex;
       justify-content: space-around;
@@ -145,11 +180,12 @@ body {
       height: 200px;
       padding: 10px;
       margin: 10px;
-      background-color: lightgrey;
+      background-color: #C0B283;
       width: 150px;
       border-radius: 50%;
-      border: 2px solid black; }
+      border: 2px solid black;
+      transition: all 1s; }
       .points-container .points-background .size-of-point-divs:hover {
-        background-color: salmon; }
+        background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
