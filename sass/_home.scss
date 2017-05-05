@@ -1,3 +1,16 @@
+.logo{
+	position: absolute;
+	z-index: 1;
+	float: left;
+	display: inline;
+	top: 35px;
+	left: 35px;
+	color: $border-color;
+	font-family:'Rock Salt', cursive;
+	font-size: 45px;
+	outline: 5px double $border-color;
+	outline-offset: 10px;
+}
 .top-bar{
 	background-color: $div-background;
 	font-family: 'Dosis', sans-serif;
@@ -7,6 +20,9 @@
 	.difficulty-selection{
 		padding:20px;
 		border-bottom: 2px solid $text-color;
+		#refreshButton{
+			
+		}
 		#hint{
 			display: inline-flex;
 			#hintKey{
@@ -64,29 +80,16 @@
 		border-radius: 1px 100px 1px 100px;
 
 		#wordFill{
+			.underline0, .underline1, .underline2, .underline3, .underline4, .underline5, .underline6, .underline7, .underline8, .underline9{
 
-			.letter0{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter1{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
+						display: inline-flex;
+						justify-content: space-around;
+						border-bottom: 2px solid $text-color;
+						height: 150px;
+						width: 45px;
+						margin: 5px;
 
-			}
-			.letter2{
+				.letter0, .letter1, .letter2, .letter3, .letter4, .letter5, .letter6, .letter7, .letter8, .letter9{
 				color: $text-color;
 				font-size: 50px;
     			display: inline-flex;
@@ -95,78 +98,10 @@
     			margin-top: 90px;
     			font-family: 'Dosis', sans-serif;
     			display: none;
-			}
-			.letter3{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter4{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter5{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter6{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter7{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter8{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
-			}
-			.letter9{
-				color: $text-color;
-				font-size: 50px;
-    			display: inline-flex;
-    			margin: 25px;
-    			justify-content: space-around;
-    			margin-top: 90px;
-    			font-family: 'Dosis', sans-serif;
-    			display: none;
+				}
 			}
 		}
+	
 	}
 }
 

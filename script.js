@@ -12,6 +12,7 @@ var wordArray = [];
 var splitWordArray;
 
 var wordFill = document.getElementById('wordFill')
+var underlineFill = document.getElementById('underlineFill');
 var hintKey = document.getElementById('hintKey');
 
 var selection = document.getElementById('myList');
@@ -24,6 +25,14 @@ var numberButton = document.getElementById('numberButton');
 var letterButton = document.getElementById('letterButton');
 
 var wordButton = document.getElementById('wordButton');
+
+var refreshButton = document.getElementById('refreshButton');
+
+refreshButton.addEventListener("click", function(){
+	var wordArray =[];
+	splitWordArray=" ";
+	wordFill.innerHTML= " ";
+})
 
 
 
@@ -44,11 +53,7 @@ function difficultSelect (){
 		wordArray.push(fourLetterWord);
 		
 		var splitWord = fourLetterWord.split("");
-		splitWordArray=splitWord;
-
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}		
+		splitWordArray=splitWord;				
 
 	}if (selection.value==="5"){
 
@@ -57,10 +62,6 @@ function difficultSelect (){
 		var splitWord = fiveLetterWord.split("");
 		splitWordArray=splitWord;
 
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}
-
 	}if (selection.value==="6"){
 
 		wordArray.push(sixLetterWord);
@@ -68,9 +69,6 @@ function difficultSelect (){
 		var splitWord = sixLetterWord.split("");
 		splitWordArray=splitWord;
 
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}
 
 	}if (selection.value==="7"){
 
@@ -79,9 +77,6 @@ function difficultSelect (){
 		var splitWord = sevenLetterWord.split("");
 		splitWordArray=splitWord;
 
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}
 
 	}if (selection.value==="8"){
 
@@ -90,20 +85,12 @@ function difficultSelect (){
 		var splitWord = eightLetterWord.split("");
 		splitWordArray=splitWord;
 
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}
-
 	}if (selection.value==="9"){
 
 		wordArray.push(nineLetterWord);
 		
 		var splitWord = nineLetterWord.split("");
 		splitWordArray=splitWord;
-
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}
 
 	}if (selection.value==="10"){
 
@@ -112,17 +99,20 @@ function difficultSelect (){
 		var splitWord = tenLetterWord.split("");
 		splitWordArray=splitWord;
 
-		for (var i = 0; i < 1; i++) {
-					hintKey.innerHTML+=splitWordArray[i]
-				}
-
 	}
 	for (var i = 0; i < splitWordArray.length; i++) {
+			
+			var underLineforLetter = document.createElement('div');
+			underLineforLetter.classList.add("underline"+i)
+			wordFill.append(underLineforLetter);
+
 			var divForLetters= document.createElement('div')
 			divForLetters.classList.add("letter"+i)
 			divForLetters.innerHTML+=splitWordArray[i];
-			wordFill.append(divForLetters)
+			
+			underLineforLetter.append(divForLetters)
 		}
+	hintKey.innerHTML+=splitWordArray[splitWordArray.length-1]
 }
 
 
@@ -141,18 +131,7 @@ var guessedRight;
 	}
 	if (!guessedRight){
 		playerOne.points+= -100;
-		
-		if(playerOne.points===400){
-				fiveHundred.style.display="none"
-			}else if(playerOne.points=== 300){
-				fourHundred.style.display="none"
-			}else if(playerOne.points=== 200){
-				threeHundred.style.display="none"
-			}else if(playerOne.points=== 100){
-				twoHundred.style.display="none"
-			}else if (playerOne.points===0) {
-				oneHundred.style.display="none"
-			}
+		removeBlocks();
 	}
 
 }
@@ -171,19 +150,24 @@ function wordCompare(){
 
 	if (!guessedRight){
 		playerOne.points+= -200;
-		
-			if(playerOne.points===400){
-				fiveHundred.style.display="none"
-			}if(playerOne.points===300){
-				fourHundred.style.display="none"
-			}if(playerOne.points===200){
-				threeHundred.style.display="none"
-			}if(playerOne.points=== 100){
-				twoHundred.style.display="none"
-			} if (playerOne.points===0||playerOne.points<=0) {
-				oneHundred.style.display="none"
-			}
+		removeBlocks();
 	}
+}
+
+function removeBlocks (){
+
+		if(playerOne.points<=400){
+				fiveHundred.style.display="none";
+			} if(playerOne.points<=300){
+				fourHundred.style.display="none";
+			} if(playerOne.points<=200){
+				threeHundred.style.display="none";
+			} if(playerOne.points<=100){
+				twoHundred.style.display="none";
+			} if (playerOne.points<=0) {
+				oneHundred.style.display="none";
+				alert("You have lost. Please refresh page to try again.")
+			}
 }
 
 function User (){
