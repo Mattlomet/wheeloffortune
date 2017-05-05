@@ -111,7 +111,7 @@ var guessedRight;
 		} 
 	}
 	if (!guessedRight){
-		playerOne.points+= -100
+		playerOne.points+= -100;
 		
 		if(playerOne.points===400){
 				fiveHundred.style.display="none"
@@ -141,27 +141,22 @@ function wordCompare(){
 	}
 
 	if (!guessedRight){
-		playerOne.points+= -200
+		playerOne.points+= -200;
 		
-		if(playerOne.points<=300){
+			if(playerOne.points===400){
 				fiveHundred.style.display="none"
+			}if(playerOne.points===300){
 				fourHundred.style.display="none"
-			}if(playerOne.points<= 100){
-				fiveHundred.style.display="none"
-				fourHundred.style.display="none"
+			}if(playerOne.points===200){
 				threeHundred.style.display="none"
+			}if(playerOne.points=== 100){
 				twoHundred.style.display="none"
-			} if (playerOne.points<=-100) {
-				fiveHundred.style.display="none"
-				fourHundred.style.display="none"
-				threeHundred.style.display="none"
-				twoHundred.style.display="none"
+			} if (playerOne.points===0||playerOne.points<=0) {
 				oneHundred.style.display="none"
 			}
 	}
 }
 
-//user baser
 function User (){
 	this.letterCompare=letterCompare;
 	this.wordCompare=wordCompare;
